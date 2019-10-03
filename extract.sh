@@ -4,5 +4,6 @@ for path in /Users/yizhangcao/Desktop/TA/2401/"${1}"/*; do
     echo "****************************************************"
     echo "${dirname}"
     echo "****************************************************"
-    tar -xvf "${path}"/*.tar
+    tar -C "${path}" -xvf "${path}"/*.tar
+    echo $?    
 done
